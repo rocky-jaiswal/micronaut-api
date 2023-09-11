@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: dev.rockyj
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, data, data-hibernate-reactive, gradle, hibernate-validator, http-client-test, java, java-application, junit, logback, lombok, micronaut-aot, micronaut-build, netty-server, postgres, reactor, reactor-http-client, readme, serialization-jackson, shade, test-resources, vertx-pg-client, yaml, yaml-build]
