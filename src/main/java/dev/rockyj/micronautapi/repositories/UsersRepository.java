@@ -1,10 +1,8 @@
 package dev.rockyj.micronautapi.repositories;
 
 import dev.rockyj.micronautapi.entities.User;
-import io.micronaut.data.annotation.Query;
 import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.repository.reactive.ReactorPageableRepository;
-import reactor.core.publisher.Flux;
 
 import java.util.UUID;
 

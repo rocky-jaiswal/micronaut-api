@@ -8,8 +8,10 @@ import dev.rockyj.micronautapi.entities.UserPreference;
 import dev.rockyj.micronautapi.services.UserService;
 import dev.rockyj.micronautapi.services.UserValidationService;
 import dev.rockyj.micronautapi.services.WeatherService;
+
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
+
 import lombok.AllArgsConstructor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

@@ -10,9 +10,6 @@ import io.micronaut.reactor.http.client.ReactorHttpClient;
 import jakarta.inject.Singleton;
 import reactor.core.publisher.Mono;
 
-
-import java.util.List;
-
 import static io.micronaut.http.HttpHeaders.ACCEPT;
 
 @Singleton
@@ -35,5 +32,5 @@ public class WeatherService {
                 .header(ACCEPT, "application/json");
 
         return httpClient.retrieve(req, Weather.class);
-    };
+    }
 }
