@@ -1,6 +1,10 @@
 micronaut:
   application:
     name: micronaut-api
+  http:
+    services:
+      weatherService:
+        url: http://localhost:3001
 netty:
   default:
     allocator:
@@ -23,7 +27,10 @@ jpa:
       hibernate:
         show-sql: false
         hbm2ddl:
-          auto: update
+          auto: validate
         connection:
           db-type: postgres
+          username: postgres
+          password: postgres
+          url: "postgresql://localhost:5432/demo"
     reactive: true

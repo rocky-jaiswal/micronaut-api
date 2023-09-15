@@ -1,7 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.0.3"
-    id("io.micronaut.test-resources") version "4.0.3"
+    // id("io.micronaut.test-resources") version "4.0.3"
     id("io.micronaut.aot") version "4.0.3"
 }
 
@@ -32,7 +32,7 @@ dependencies {
     runtimeOnly("org.yaml:snakeyaml")
 
     // testImplementation("io.micronaut:micronaut-http-client")
-    testResourcesService("org.postgresql:postgresql")
+    // testResourcesService("org.postgresql:postgresql")
 }
 
 
@@ -52,9 +52,9 @@ micronaut {
         incremental(true)
         annotations("dev.rockyj.micronaut-api.*")
     }
-    testResources {
-        additionalModules.add("hibernate-reactive-postgresql")
-    }
+//    testResources {
+//        additionalModules.add("hibernate-reactive-postgresql")
+//    }
     aot {
     // Please review carefully the optimizations enabled below
     // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
